@@ -3,8 +3,10 @@
 An opensource executable and class library to split and unpack aml_upgrade_package.img files.
 (Yes the code is extremely messy, but it does work)
 
+DOWNLOADS - Download PREBUILT.zip
+
 ## Usage
-Executable -
+Executable(Note: AMLUnpacker.dll is not needed to  run the executable) -
 	AMLUnpackerExecutable.exe -u aml_upgrade_package.img MyOutputFolder
 	
 Class library -
