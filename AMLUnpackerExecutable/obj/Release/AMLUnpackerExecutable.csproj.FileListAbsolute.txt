@@ -1,7 +1,0 @@
-C:\Users\Ricky Divjakovski\source\repos\AMLUnpacker\AMLUnpackerExecutable\bin\Release\AMLUnpackerExecutable.exe.config
-C:\Users\Ricky Divjakovski\source\repos\AMLUnpacker\AMLUnpackerExecutable\bin\Release\AMLUnpackerExecutable.exe
-C:\Users\Ricky Divjakovski\source\repos\AMLUnpacker\AMLUnpackerExecutable\bin\Release\AMLUnpackerExecutable.pdb
-C:\Users\Ricky Divjakovski\source\repos\AMLUnpacker\AMLUnpackerExecutable\obj\Release\AMLUnpackerExecutable.csprojResolveAssemblyReference.cache
-C:\Users\Ricky Divjakovski\source\repos\AMLUnpacker\AMLUnpackerExecutable\obj\Release\AMLUnpackerExecutable.csproj.CoreCompileInputs.cache
-C:\Users\Ricky Divjakovski\source\repos\AMLUnpacker\AMLUnpackerExecutable\obj\Release\AMLUnpackerExecutable.exe
-C:\Users\Ricky Divjakovski\source\repos\AMLUnpacker\AMLUnpackerExecutable\obj\Release\AMLUnpackerExecutable.pdb

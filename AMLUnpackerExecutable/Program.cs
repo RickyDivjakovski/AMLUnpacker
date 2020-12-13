@@ -15,9 +15,10 @@ namespace AMLUnpackerExecutable
                     if (File.Exists(args[1]))
                     {
                         string outputFolder = args[2];
+                        char slash = Path.DirectorySeparatorChar;
 
                         if (!Directory.Exists(outputFolder)) Directory.CreateDirectory(outputFolder);
-                        HexSplit(args[1], outputFolder + "\\head.BIN", "00000000", "000028C0");
+                        HexSplit(args[1], outputFolder + slash + "head.BIN", "00000000", "000028C0");
 
                         string LineContent = "";
                         string PreviousLineContent = "";
@@ -43,7 +44,7 @@ namespace AMLUnpackerExecutable
                         bool recovery = false;
                         bool system = false;
 
-                        FileStream hexReader = new FileStream(outputFolder + "\\head.BIN", FileMode.Open);
+                        FileStream hexReader = new FileStream(outputFolder + slash + "head.BIN", FileMode.Open);
 
                         while (CurrentByte <= hexReader.Length)
                         {
@@ -66,7 +67,7 @@ namespace AMLUnpackerExecutable
                                     if (FileExtension != "" && StartAddress != "" && FileSize != "" && EndAddress != "" && FileName != "")
                                     {
                                         Console.WriteLine("Splitting: " + FileName + FileExtension + " " + StartAddress + " : " + EndAddress + "\nTotal bytes: " + (Convert.ToInt64(FileSize.ToUpper(), 16).ToString()) + "\n");
-                                        HexSplit(args[1], outputFolder + "\\" + FileName + FileExtension, StartAddress, EndAddress);
+                                        HexSplit(args[1], outputFolder + slash + FileName + FileExtension, StartAddress, EndAddress);
                                         TotalFile = TotalFile + FileName + FileExtension + "\nStart address: " + StartAddress + "\nEnd address: " + EndAddress + "\nFile size: " + (Convert.ToInt64(FileSize.ToUpper(), 16).ToString()) + "\n\n";
                                         FileExtension = "";
                                         StartAddress = "";
@@ -104,9 +105,9 @@ namespace AMLUnpackerExecutable
                         }
 
                         hexReader.Dispose();
-                        File.Delete(outputFolder + "\\head.BIN");
+                        File.Delete(outputFolder + slash + "head.BIN");
 
-                        System.IO.File.WriteAllText(outputFolder + "\\partition_structure.txt", TotalFile);
+                        System.IO.File.WriteAllText(outputFolder + slash + "partition_structure.txt", TotalFile);
                     }
                     else Console.WriteLine("Error: Cannot find - " + args[1]);
                 }
