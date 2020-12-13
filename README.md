@@ -28,5 +28,5 @@ Class library -
 -Null
 
 ## Contributors
-Ricky Divjakovski
-perpetual@freaktab.com
+* Ricky Divjakovski - perpetual@freaktab.com
+* Marcos Cunha - marcos21xx@gmail.com
